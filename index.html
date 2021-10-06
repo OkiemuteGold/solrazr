@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solrazr</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/main.css" />
+</head>
+
+<body id="Home">
+    <div class="overlay"></div>
+    <header id="header" class="navbar-dark fixed-top d-flex justify-content-center align-items-center">
+        <div class="container h-100 d-flex justify-content-between align-items-center">
+            <a href="#Home" class="navbar-brand">
+                <img src="images/logo.png" alt="">
+            </a>
+
+            <nav id="nav" class="navbar" aria-roledescription="navigation">
+                <ul>
+                    <li>
+                        <a class="link" href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#Features">Features</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#Allocation">Allocation</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#SolRazrBuild">SolRazr Build</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#AuditReport">Audit Report</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#Partners">Partners</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#Roadmap">Roadmap</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#Team">Team</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#Ecosystem">Ecosystem</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-toggler" aria-roledescription="mobile menu toggler">
+                <span class="mobile-menu-toggler"></span>
+            </div>
+
+            <div id="close-nav" aria-roledescription="close menu toggler">
+                <i class="fa fa-times fa-2x"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-top d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="lottery-mobile-view row">
+                    <div class="text-center">Lottery results is supported only on Desktop</div>
+                </div>
+
+                <div class="row lottery-desktop-view">
+                    <div class="col-md-6">
+                        <div class="left-content">
+                            <h1 class="intro">Whitelist <br> Results</h1>
+                            <p>
+                                * Only whitelisted and successfully KYCed users are allowed to participate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-content">
+                            <div class="steps">
+                                <p class="step-text">Step 1</p>
+                                <p class="line"></p>
+                                <p class="circle"></p>
+                            </div>
+
+                            <h2>Connect your wallet to check if you won the lottery</h2>
+
+                            <button class="connect-wallet-btn">Connect Wallet <span><i
+                                        class="fa fa-arrow-right"></i></span></button>
+
+                            <p class="help-text">Trouble connecting wallet? Refresh the page and try again !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-bottom h-100 w-100 d-flex justify-content-center align-items-center">
+            <div class="h-100 w-100 container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-1 order-lg-0">
+                        <div class="left-content">
+                            <h1>Raise Capital. <br> Build Fast.</h1>
+                            <p>
+                                <span>SolRazr</span> is the first decentralised developer ecosystem for
+                                <span>Solana</span>
+                            </p>
+                            <div class="type-box">
+                                <i class="fas fa-angle-right pl-2 pr-3"></i>
+                                <span class="type-text">Launchpad</span>
+                                <!-- <span class="type-text">Launchpad</span>
+                                <span class="type-text">Launchpad</span>
+                                <span class="type-text">Launchpad</span> -->
+                            </div>
+
+                            <div class="left-image mb-5">
+                                <img src="images/solana.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-0 order-lg-1">
+                        <div class="right-content">
+                            <img src="images/bulb.svg" alt="" class="mt-md-0 mb-5 mb-md-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 h-100 feature-container" id="Features">
+        <div class="side-circle">
+            <img src="images/side-circle.png" alt="circle">
+        </div>
+
+        <div class="w-100 h-100 features container">
+            <div class="feature-background">
+                <h1 class="text-center section-title">Top <span>Features</span> of SolRazr</h1>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="features-item card card-hover">
+                            <img class="card-img-top img-fluid img-bg w-50" src="images/feature/token.svg" alt="">
+                            <div class="px-0 pb-0 card-body">
+                                <h5 class="card-title">Tradable Allocations</h5>
+                                <p class="card-text">
+                                    <span>Reimagining token sale whitelists and allocations
+                                        by leveraging the power of NFTs on Solana.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="features-item card card-hover">
+                            <img class="card-img-top img-fluid img-bg w-50" src="images/feature/accelator.svg" alt="">
+                            <div class="px-0 pb-0 card-body">
+                                <h5 class="card-title">Accelerator</h5>
+                                <p class="card-text"><span>Under Accelerator program - we incubate projects
+                                        and help with go-to market strategy to launch quickly.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="features-item card card-hover"><img class="card-img-top img-fluid img-bg w-50"
+                                src="images/feature/developer-tools.svg" alt="">
+                            <div class="px-0 pb-0 card-body">
+                                <h5 class="card-title">Developer Tools</h5>
+                                <p class="card-text"><span>Turbocharge your Solana dApp development with a
+                                        suite of powerful developer tools.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="features-item card card-hover"><img class="card-img-top img-fluid img-bg w-50"
+                                src="images/feature/cross-chain.svg" alt="">
+                            <div class="px-0 pb-0 card-body">
+                                <h5 class="card-title">Cross-chain Pools</h5>
+                                <p class="card-text"><span>Built on Solana wormhole, cross-chain pools allow
+                                        communities from other chains to invest directly into Solana
+                                        projects.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="allocation-container" id="Allocation">
+        <div class="w-100 h-100 allocation container">
+            <div class="feature-background">
+                <h1 class="text-center section-title">Allocation model - <span>Tiered System</span></h1>
+
+                <div class="row">
+                    <div class="allocation-item col-md-6 col-lg-4 col-xl-3 col-12">
+                        <div class="inner card card-hover">
+                            <div class="row">
+                                <div class="text-center col-lg-12 col-12">
+                                    <img src="images/allocation/seed.svg" alt="seed" class="hig-w">
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <div class="text-center">
+                                        <h3>Seed</h3>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="border-right col-md-6 col-6">
+                                            <h4 class="text-percent">14%</h4>
+                                            <p class="mb-0 card-footer-content">Weightage</p>
+                                        </div>
+                                        <div class="col-md-6 col-6">
+                                            <h4 class="text-numb">500</h4>
+                                            <p class="mb-0 card-footer-content">SOLR Staked</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allocation-item col-md-6 col-lg-4 col-xl-3 col-12">
+                        <div class="inner card card-hover">
+                            <div class="row">
+                                <div class="text-center col-lg-12 col-12">
+                                    <img src="images/allocation/sapling.svg" alt="sapling" class="hig-w">
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <div class="text-center">
+                                        <h3>Sapling</h3>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="border-right col-md-6 col-6">
+                                            <h4 class="text-percent">21%</h4>
+                                            <p class="mb-0 card-footer-content">Weightage</p>
+                                        </div>
+                                        <div class="col-md-6 col-6">
+                                            <h4 class="text-numb">2,500</h4>
+                                            <p class="mb-0 card-footer-content">SOLR Staked</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allocation-item col-md-6 col-lg-4 col-xl-3 col-12">
+                        <div class="inner card card-hover">
+                            <div class="row">
+                                <div class="text-center col-lg-12 col-12">
+                                    <img src="images/allocation/tree.svg" alt="tree" class="hig-w">
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <div class="text-center">
+                                        <h3>Tree</h3>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="border-right col-md-6 col-6">
+                                            <h4 class="text-percent">29%</h4>
+                                            <p class="mb-0 card-footer-content">Weightage</p>
+                                        </div>
+                                        <div class="col-md-6 col-6">
+                                            <h4 class="text-numb">12,500</h4>
+                                            <p class="mb-0 card-footer-content">SOLR Staked</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allocation-item col-md-6 col-lg-4 col-xl-3 col-12">
+                        <div class="inner card card-hover">
+                            <div class="row">
+                                <div class="text-center col-lg-12 col-12">
+                                    <img src="images/allocation/mighty-oak.svg" alt="mightyOak" class="hig-w">
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <div class="text-center">
+                                        <h3>Mighty Oak</h3>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="border-right col-md-6 col-6">
+                                            <h4 class="text-percent">36%</h4>
+                                            <p class="mb-0 card-footer-content">Weightage</p>
+                                        </div>
+                                        <div class="col-md-6 col-6">
+                                            <h4 class="text-numb">50,000</h4>
+                                            <p class="mb-0 card-footer-content">SOLR Staked</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="build-container" id="SolRazrBuild">
+        <div class="container">
+            <div>
+                <div class="build-bg-image"></div>
+            </div>
+            <div class="build-content flex-column flex-xl-row">
+                <div class="title-container">
+                    <h2 class="section-title">SolRazr <span>Build</span></h2>
+                    <p>Turbocharge your Solana development with powerful developer tools</p>
+                </div>
+                <div class="build-side-content">
+                    <p>Powerful suite of developer tools to manage your entire App development lifecycle on
+                        Solana. It will help you build, test, monitor, debug, document and publish your Solana dApps.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="report-bg px-2" id="AuditReport">
+        <div class="report-container container">
+            <div class="row">
+                <div class="col-md-6 col-12 order-md-first order-last">
+                    <div class="p-2 d-flex justify-content-center align-items-center h-100 report-text">
+                        <div>
+                            <h5 class="pt-5 report-title"><span>Security Audit Report </span><br><span>by Kudelski
+                                </span>
+                            </h5>
+                            <div class="report-btn-container">
+                                <button type="button" class="mt-1 btn-pos outline-btn btn btn-primary">Open
+                                    Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 order-md-last order-first">
+                    <div class="mt-4 mt-md-5">
+                        <img src="images/report_desktop.png" class="img-responsive report-img">
+                        <!-- <img
+                            src="images/report_mobile.png" class="img-responsive report-img"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-bg" id="Partners">
+        <div class="partners-container container">
+            <h1 class="text-center section-title">Partners</h1>
+
+            <div class="partners-fund row">
+                <div class="partners-title col-md-12 col-12">
+                    <div class="partners-tag-line-left col-md-5 col-4"></div>
+                    <div class="partners-tag col-md-2 col-4"><span>Funds</span></div>
+                    <div class="partners-tag-line-right col-md-5 col-4"></div>
+                </div>
+
+                <div class="partners-logo row">
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg ascensive"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg moonrock"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg divergence"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg cms"></div>
+                    </div>
+
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg morningstar"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg genblock"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg gvb"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg zbs"></div>
+                    </div>
+
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg panony"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-3 col-6">
+                        <div class="logo-bg stl"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="partners-title col-md-12 col-12">
+                    <div class="partners-tag-line-left col-md-5 col-4"></div>
+                    <div class="partners-tag col-md-2 col-4"><span>Angels</span></div>
+                    <div class="partners-tag-line-right col-md-5 col-4"></div>
+                </div>
+
+                <div class="partners-logo row">
+                    <div class="partners-logo-container col-md-4 col-6">
+                        <div class="logo-bg frax"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-4 col-6">
+                        <div class="logo-bg parafi"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-4 col-6">
+                        <div class="logo-bg archer"></div>
+                    </div>
+
+                    <div class="partners-logo-container col-md-4 col-6">
+                        <div class="logo-bg edit500"></div>
+                    </div>
+                    <div class="partners-logo-container col-md-4 col-6">
+                        <div class="logo-bg oream"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap-bg" id="Roadmap">
+        <div class="w-100 h-100 roadmap-container container">
+            <h1 class="text-center section-title">Product <span>Roadmap</span></h1>
+
+            <div class="container">
+                <div class="roadmap-timeline"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-bg" id="Team">
+        <div class="w-100 h-100 team-container container">
+            <h1 class="text-center section-title"><span>Team</span> &amp; Advisors</h1>
+
+            <div class="row members-row">
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Sreekanth.png" alt="Shreekanth">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Sreekanth Kalapur</h3>
+
+                        <p class="team-description ">
+                            VP Engineering at Polymorph acquired by Walmart Labs. <br>
+                            15+ years of experience building highly-scalable products. <br>Alumnus of BITS-Pilani.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Vijay.png" alt="Vijay">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Vijay Kalangi</h3>
+                    
+                        <p class="team-description">
+                            Co-founder &amp; CTO of an edu-tech firm with multi-million dollar revenue. <br>
+                            14+ years of experience building products in learning and edu-tech. <br>Alumnus of BITS-Pilani
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Nicole.png" alt="Nicole">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Nicholas Gregory</h3>
+                    
+                        <p class="team-description ">
+                            CEO of CommerceBlock. <br>
+                            Technology leader and Bitcoin expert since 2012 <br>
+                            Ex - Vice President at Merrill Lynch, Bank of America &amp; JPMorgan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Gopal.png" alt="Nicole">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Gopal Kishore</h3>
+                    
+                        <p class="team-description ">
+                            15 years of experience in digital marketing. <br>
+                            Led marketing for technology start-ups and public relations agencies. <br>
+                            Masters in Journalism, and a degree in visual communications.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Prash.png" alt="Nicole">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Prashanth K Rao</h3>
+                    
+                        <p class="team-description ">
+                            15 years of Risk &amp; compliance experience in companies like KPMG &amp; Deloitte. <br>Global Compliance Pillar Lead at ABInBeV. <br>
+                            Alumni of IIIT &amp; NIT.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Shyam.png" alt="Nicole">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Shyam Mohan K</h3>
+                    
+                        <p class="team-description ">
+                            12+ years experience in developing well-engineered software. <br>
+                            Co-founder of multiple technology startups.
+                            <br>
+                            Bachelors in Computer Science.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Farizha.png" alt="Nicole">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Fahriza Shuaib</h3>
+                    
+                        <p class="team-description ">
+                            Community Manager<br>Private Group Analyst<br>
+                            Technical Chart Analyst<br>
+                            5years+ in cryptocurrencies market.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Dennis.png" alt="Nicole">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Dennis Czempik</h3>
+                    
+                        <p class="team-description ">
+                            Crypto entrepreneur since 2017.<br>
+                            Helped raise funds for several projects via
+                            investor communities.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member col-lg-4 col-md-6 col-12">
+                    <img src="images/team/Roxana.png" alt="Nicole">
+
+                    <div class="team-details">
+                        <h3 class="team-title">Roxana Nasoi</h3>
+                    
+                        <p class="team-description ">
+                            Head of growth, Launchpoool<br>
+                            Privacy Advocate<br>
+                            Community Hacker<br>
+                            Business Strategist
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ecosystem-bg" id="Ecosystem">
+        <div class="ecosystem-container">
+            <div class="container">
+                <h1 class="text-center section-title">Built on <span>Solana Ecosystem</span></h1>
+
+                <div class="ecosystem-content">
+                    <p>Solana is the fastest growing blockchain with key platforms like Serum,
+                        Raydium and many DeFi protocols being built on it. SolRazr aims to supercharge the adoption of Solana network by helping developers and projects raise capital and build fast.</p>
+                </div>
+                <div>
+                    <div class="ecosystem-bg-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-bg">
+        <div class="container">
+            <footer class="text-center text-md-left">
+                <div class="footer-row row">
+                    <div class="px-0 col-md-4 col-12 order-1">
+                        <div class="footer-item-box mb-3">
+                            <img src="/images/logo.svg" alt="logo" class="mt-2">
+                            <p class="m-2 mt-4 text-white">©2021 SolRazr. All rights reserved</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-12 order-2">
+                        <div class="ml-3 footer-item-box mb-3">
+                            <div class="m-2 footer-item">
+                                <p class="footer-heading">Social</p>
+                            </div>
+
+                            <div class="m-2 mt-4 footer-item">
+                                <a target="_blank" href="" class="link">Blog</a>
+                            </div>
+
+                            <div class="m-2 footer-item"><a target="_blank" href="" class="link">Telegram Announcement</a>
+                            </div>
+
+                            <div class="m-2 footer-item"><a target="_blank" href="" class="link">Telegram Community</a></div>
+
+                            <div class="m-2 footer-item"><a target="_blank" href="" class="link">Twitter</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-12 order-3">
+                        <div class="ml-3 footer-item-box mb-3">
+                            <div class="m-2 footer-item">
+                                <p class="footer-heading">Company</p>
+                            </div>
+
+                            <div class="m-2 footer-item"><a target="_blank" href="" class="link">Careers</a>
+                            </div>
+                            <div class="m-2 footer-item"><a target="_blank" href="" class="link">Apply for IDO</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-12 order-4">
+                        <div class="ml-3 footer-item-box mb-3">
+                            <div class="m-2 footer-item">
+                                <p class="footer-heading">Help</p>
+                            </div>
+
+                            <div class="m-2 footer-item">
+                                <a href="" class="link">Terms</a>
+                            </div>
+                            <div class="m-2 footer-item">
+                                <a href="" class="link">Privacy</a>
+                            </div>
+                            <div class="m-2 footer-item">
+                                <a target="_blank" href="" class="link">Press Kit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-12 order-5">
+                        <div class="ml-3 footer-item-box mb-3">
+                            <div class="m-2 footer-item">
+                                <p class="footer-heading">Developers</p>
+                            </div>
+
+                            <div class="m-2 mt-4 footer-item">
+                                <a target="_blank" href="" class="link">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <div class="mode-toggle-button">
+        <button type="button" class="toggle-night btn btn-primary"></button>
+        <button type="button" class="toggle-day btn btn-primary"></button>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
