@@ -109,8 +109,8 @@ img {
 
 .mobile-menu-toggler {
   display: block;
-  height: 2px;
-  width: 20px;
+  height: 1.5px;
+  width: 18px;
   background: #01f39d;
   position: absolute;
   right: -2.5px;
@@ -121,8 +121,8 @@ img {
 .mobile-menu-toggler:after {
   content: "";
   position: absolute;
-  height: 2px;
-  width: 25px;
+  height: 1.5px;
+  width: 23px;
   background: #01f39d;
   right: 0px;
   top: 8px;
@@ -143,13 +143,45 @@ img {
   transform: rotate(90deg) !important;
 }
 
+.connect-btn {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0 20px 5px auto;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 4px;
+    color: #f2f2f2;
+    border: 1px solid #5ac4be;
+    background: transparent ;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    cursor: pointer;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    line-height: 1;
+}
+
+.connect-btn svg {
+    vertical-align: top;
+}
+
+.connect-btn span {
+    margin-left: 3px;
+}
+
+.connect-btn:hover {
+    color: #5ac4be;
+}
+
 /* hero ------------------ */
 .lottery-mobile-view {
     display: none;
 }
 
 .hero {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .hero h1.intro {
@@ -948,6 +980,10 @@ footer {
         width: 100vw !important;
         right: 100vw !important;
         transform: translateX(100vw) !important;
+    }
+
+    .connect-btn {
+        margin: 0 5px 5px 10px;
     }
 
     .navbar {
