@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  /* transition: color background-color 0.4s ease; */
 }
 
 .container {
@@ -30,7 +29,7 @@ img {
     height: auto;
 }
 
-/* header */
+/* header ----------- */
 #header {
   transition: 0.4s ease;
   -webkit-transition: 0.4s ease;
@@ -101,7 +100,6 @@ img {
   height: 30px;
   width: 30px;
   border-radius: 4px;
-  /* background: rgba(0, 0, 0, 0.1); */
   position: relative;
 }
 
@@ -151,7 +149,7 @@ img {
 }
 
 .hero {
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 .hero h1.intro {
@@ -307,8 +305,9 @@ img {
 .hero-bottom .left-content p {
     font-size: 26px;
     line-height: 40px;
-    min-width: 600px;
+    min-width: 580px;
 }
+
 .hero-bottom .left-content p span:first-child {
     color: #01f39d;
 }
@@ -337,15 +336,17 @@ img {
 }
 
 .hero-bottom .left-image {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .hero-bottom .right-content {
     padding-top: 0;
-    margin-top: -35px;
+    max-height: 150px;
+    margin-top: 150px;
+    margin-bottom: 0px;
 }
 
-/* features */
+/* features ------------ */
 .feature-container {
     background: rgb(18, 22, 28);
     position: relative;
@@ -497,7 +498,7 @@ img {
 }
 
 
-/* build */
+/* build -------------------- */
 .build-container {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -509,6 +510,7 @@ img {
     background-repeat: no-repeat;
     background-position: 50% center;
     height: 440px;
+    margin-bottom: 10px;
 }
 
 .build-content {
@@ -555,7 +557,7 @@ img {
     color: #ccc;
 }
 
-/* report ----------- */
+/* report --------------- */
 .report-bg {
     background: rgb(18, 18, 18);
     padding-top: 80px;
@@ -609,7 +611,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .partners-tag-line-left, .partners-tag-line-right {
@@ -638,15 +640,16 @@ img {
     padding-bottom: 25px;
     text-align: center;
     justify-content: center;
+    margin: auto;
 }
 
 .partners-logo-container {
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .logo-bg {
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: contain;
     background-position: 50% center;
     height: 70px;
 }
@@ -734,7 +737,7 @@ img {
 }
 
 .members-row .team-member {
-    margin: 20px auto;
+    margin: 30px auto 0;
 }
 
 .members-row .team-member, .members-row .team-member .team-details {
@@ -805,6 +808,10 @@ footer {
 
 .footer-row {
     padding: 0px 15px;
+}
+
+.footer-item-box {
+    margin: 0 15px 20px 0;
 }
 
 .footer-heading {
@@ -885,6 +892,21 @@ footer {
     .build-side-content p {
         text-align: center;
     }
+
+    .hero h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .hero-bottom .left-content p {
+        font-size: 18px;
+        line-height: 30px;
+        min-width: 300px;
+    }
+    .hero-bottom .type-box {
+        width: 60%;
+        height: 50px;
+        line-height: 25px;
+    }
 }
 
 @media screen and (max-width: 769px){
@@ -900,11 +922,24 @@ footer {
         height: 150px;
     }
 
+    .hero-bottom {
+        height: 100%;
+    }
+
     .hero-bottom .right-content {
         width: 300px;
         max-height: 150px;
         margin-top: 150px;
         margin-bottom: 100px;
+    }
+
+    .members-row .team-member, .members-row .team-member .team-details {
+        align-items: center;
+        text-align: center;
+    }
+
+    .members-row .team-member .team-details .team-description {
+        max-width: 350px;
     }
 }
 
@@ -926,18 +961,11 @@ footer {
 
     .hero h1 {
         font-size: 45px;
-        font-weight: 800;
-        line-height: 60px;
     }
-    .hero-bottom .left-content p {
-        font-size: 18px;
-        line-height: 30px;
-        min-width: 300px;
-    }
+
     .hero-bottom .type-box {
         width: 100%;
         height: 45px;
-        line-height: 25px;
     }
 
     .hero-bottom .type-box span {
@@ -948,6 +976,10 @@ footer {
         font-size: 20px;
         font-weight: 600;
         line-height: 28px;
+        text-align: center;
+    }
+
+    footer {
         text-align: center;
     }
 }
