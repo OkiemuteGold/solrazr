@@ -9,16 +9,20 @@ jQuery(document).ready(function ($) {
     toggler.addEventListener("click", function () {
         if (nav.classList.contains("show-nav")) {
             nav.classList.remove("show-nav");
+            // $(".connect-btn").css("visibility", "visible");
+            $(".connect-btn").show();
         } else {
             nav.classList.add("show-nav");
             toggler.style.display = "none";
             closeNav.style.display = "block";
+            $(".connect-btn").hide();
 
             closeNav.addEventListener("click", function () {
                 nav.classList.remove("show-nav");
                 toggler.style.display = "block";
                 closeNav.style.display = "none";
                 toggler.classList.remove("styled-toggler");
+                $(".connect-btn").show();
             })
         }
 
@@ -39,6 +43,9 @@ jQuery(document).ready(function ($) {
             document.querySelector(this.getAttribute("href")).scrollIntoView({
                 behavior: "smooth",
             });
+            
+            $(".navbar a").removeClass("active");
+            $(this).addClass("active");
         });
     });
 });
