@@ -27,6 +27,8 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
+  border-style: none;
 }
 
 /* header ----------- */
@@ -46,6 +48,7 @@ img {
       rgb(85, 162, 255)
     )
     0px 100% / 100% 1.5px no-repeat rgb(0, 0, 0);
+  z-index: 3;
 }
 
 .navbar {
@@ -73,7 +76,7 @@ img {
 
 #close-nav {
   cursor: pointer;
-  z-index: 999;
+  z-index: 5;
   display: none;
   position: absolute;
   right: 5%;
@@ -202,6 +205,85 @@ img {
   color: #5ac4be;
 }
 
+/* wallet modal */
+.modal {
+  position: relative;
+  z-index: 9999;
+  height: 100vh;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #1c274f;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+}
+
+.modal-header {
+  padding: 16px 24px;
+  color: #fafafa;
+  background: #1c274f;
+  border-bottom: 1px solid #fafafa;
+  border-radius: 4px 4px 0 0;
+}
+
+.modal-title {
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+.modal-header .close {
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #fafafa;
+  border: none;
+  margin-bottom: 2px;
+}
+
+.modal-body {
+  padding: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.select-wallet .wallet-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+  height: 48px;
+  line-height: 1.499;
+  text-align: left;
+  background-color: transparent;
+  color: #fafafa;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+  border: 1px solid #5ac4be;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  /* transition: all .3s cubic-bezier(.645,.045,.355,1); */
+}
+
+.select-wallet .wallet-button:not(:first-child) {
+  margin-top: 10px;
+}
+
+.select-wallet .wallet-button img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
 /* hero ------------------ */
 .lottery-mobile-view {
   display: none;
@@ -286,7 +368,7 @@ img {
   border-radius: 12px;
   padding: 6px 6px 6px 10px;
   margin-top: 10px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .connect-wallet-btn span {
@@ -908,7 +990,7 @@ footer {
 }
 
 .mode-toggle-button {
-  z-index: 4;
+  z-index: 2;
   position: fixed;
   bottom: 0px;
   right: 0px;
